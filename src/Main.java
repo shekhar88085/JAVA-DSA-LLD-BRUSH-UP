@@ -3,8 +3,11 @@
 public class Main {
     public static void main(String[] args) {
 
-        FunctionalInterfacesExample functionalInterfacesExample = new FunctionalInterfacesExample();
-        functionalInterfacesExample.run();
+        PriorityQueueExample example = new PriorityQueueExample();
+        example.run();
+
+ //       FunctionalInterfacesExample functionalInterfacesExample = new FunctionalInterfacesExample();
+ //       functionalInterfacesExample.run();
 
 //        FunctionalProgrammingExample functionalProgrammingExample = new FunctionalProgrammingExample();
 //        functionalProgrammingExample.run();
