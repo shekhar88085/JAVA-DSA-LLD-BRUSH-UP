@@ -3,8 +3,8 @@
 public class Main {
     public static void main(String[] args) {
 
-        PriorityQueueExample example = new PriorityQueueExample();
-        example.run();
+ //       PriorityQueueExample example = new PriorityQueueExample();
+ //       example.run();
 
  //       FunctionalInterfacesExample functionalInterfacesExample = new FunctionalInterfacesExample();
  //       functionalInterfacesExample.run();
