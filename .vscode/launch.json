@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StackUsingArray",
+            "request": "launch",
+            "mainClass": "StackUsingArray",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
             "name": "SetExample",
             "request": "launch",
             "mainClass": "collectionsLearning.SetExample",
