@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SetExample",
+            "request": "launch",
+            "mainClass": "collectionsLearning.SetExample",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "ListExample",
+            "request": "launch",
+            "mainClass": "collectionsLearning.ListExample",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "ListExample",
+            "request": "launch",
+            "mainClass": "java.collections.ListExample",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "ListExample",
+            "request": "launch",
+            "mainClass": "java.collection.ListExample",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
             "name": "HeapExample",
             "request": "launch",
             "mainClass": "HeapExample",
