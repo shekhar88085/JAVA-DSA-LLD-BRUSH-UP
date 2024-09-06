@@ -6,6 +6,9 @@ import java.util.LinkedHashSet;
 import java.util.TreeSet;
 
 public class SetExample {
+//     HashSet: Fast and unordered.
+// LinkedHashSet: Preserves insertion order, slightly slower than HashSet.
+// TreeSet: Sorted, provides methods for accessing the smallest and largest elements.
     public static void main(String[] args) {
         // Exercise 1: Working with HashSet
         System.out.println("=====================================================================================");

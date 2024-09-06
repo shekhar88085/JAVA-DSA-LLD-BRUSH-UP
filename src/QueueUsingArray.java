@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 class ArrayQueue {
     private int[] queue;
     private int front;
