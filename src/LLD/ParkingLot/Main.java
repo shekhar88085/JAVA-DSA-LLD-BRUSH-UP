@@ -32,11 +32,14 @@ public class Main {
         //add slot to floor
         Slot slot = new Slot(0, false, SlotType.BIKE, bike);
         floor1.addSlot(slot);
+        Ticket bikeTicket = null;
         try {
-            parkingLot.parkVehicle(bike);
+            bikeTicket = parkingLot.parkVehicle(bike);
         } catch (NoAvailableSlotException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+
+        parkingLot.unparkVehicle(bikeTicket);
     }
 }

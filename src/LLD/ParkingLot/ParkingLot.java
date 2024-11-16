@@ -20,6 +20,8 @@ public class ParkingLot {
         for (Floor floor : floors) {
             try {
                 availableSlot = floor.findAvailableSlot(); // Find an available slot
+                availableSlot.setOccupied(true);
+                floor.addSlot(availableSlot);
                 floorNumber = floor.getFloorNumber();
                 break;
             } catch (NoAvailableSlotException e) {
@@ -32,7 +34,7 @@ public class ParkingLot {
         }
 
         // Mark the slot as occupied
-        availableSlot.setOccupied(true);
+        //availableSlot.setOccupied(true);
 
         // Generate a unique ticket ID
         String ticketId = "T-" + System.currentTimeMillis();
