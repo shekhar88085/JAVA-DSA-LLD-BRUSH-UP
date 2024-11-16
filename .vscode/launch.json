@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "OOPS.RestaurantReservationPractice.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "OOPS.LibraryPractice.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Abstraction",
+            "request": "launch",
+            "mainClass": "OOPS.Abstraction",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Dog",
+            "request": "launch",
+            "mainClass": "OOPS.Dog",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "OOPS.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Person",
+            "request": "launch",
+            "mainClass": "OOPS.Person",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "MapExample",
+            "request": "launch",
+            "mainClass": "collectionsLearning.MapExample",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
             "name": "QueueUsingArray",
             "request": "launch",
             "mainClass": "QueueUsingArray",
