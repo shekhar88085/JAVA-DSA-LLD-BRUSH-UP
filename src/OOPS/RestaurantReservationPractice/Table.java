@@ -8,6 +8,7 @@ public class Table {
     Table(int tableNumber, int capacity) {
         this.tableNumber = tableNumber;
         this.capacity = capacity;
+        this.isAvailable = true; // Tables are available by default
     }
 
     public int getTableNumber() {

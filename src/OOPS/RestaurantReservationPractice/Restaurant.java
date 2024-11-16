@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Restaurant {
-    List<Table> tables;
-    List<Reservation> reservations;
+    List<Table> tables = new ArrayList<>();
+    List<Reservation> reservations = new ArrayList<>();
 
-    Restaurant() {
-        this.tables = new ArrayList<>();
-        this.reservations = new ArrayList<>();
-    }
+    // Restaurant() {
+    //     this.tables = new ArrayList<>();
+    //     this.reservations = new ArrayList<>();
+    // }
 
     // Add a table to the restaurant
     public void addTable(Table table) {
