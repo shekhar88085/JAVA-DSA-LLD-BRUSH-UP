@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "LLD.ATM.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "LLD.ParkingLot.Main",
             "projectName": "EDARPRACTICE"
         },
