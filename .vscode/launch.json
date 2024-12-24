@@ -6,6 +6,153 @@
     "configurations": [
         {
             "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "JAVA.mythik.main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "JAVA.collectionsLearning.collectionUtilities.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "ArraySort",
+            "request": "launch",
+            "mainClass": "JAVA.collectionsLearning.collectionUtilities.ArraySort",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "HeapExample",
+            "request": "launch",
+            "mainClass": "JAVA.HeapExample",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "JAVA.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "MapExample",
+            "request": "launch",
+            "mainClass": "JAVA.collectionsLearning.MapExample",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "ListExample",
+            "request": "launch",
+            "mainClass": "JAVA.collectionsLearning.ListExample",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "j.Comparable.AdvanceComporator.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "j.Comparable.SortWithMultipleCriteria.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "j.Comparable.Sort_with_multiple_criteria.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "j.Comparable.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "j.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "SetExample",
+            "request": "launch",
+            "mainClass": "j.collectionsLearning.SetExample",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "ListExample",
+            "request": "launch",
+            "mainClass": "j.collectionsLearning.ListExample",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "SetExample",
+            "request": "launch",
+            "mainClass": "J.collectionsLearning.SetExample",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "ListExample",
+            "request": "launch",
+            "mainClass": "J.collectionsLearning.ListExample",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "MapExample",
+            "request": "launch",
+            "mainClass": "J.collectionsLearning.MapExample",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "MapExample",
+            "request": "launch",
+            "mainClass": "java.collectionsLearning.MapExample",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "ListExample",
+            "request": "launch",
+            "mainClass": "java.collectionsLearning.ListExample",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main2",
+            "request": "launch",
+            "mainClass": "Main2",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "LLD.URLShortner.Main",
