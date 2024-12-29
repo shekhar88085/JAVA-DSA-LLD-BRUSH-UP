@@ -8,6 +8,55 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "LLD.DesignPatterns.Creational.Singleton.Implentation.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "PrototypeDemo",
+            "request": "launch",
+            "mainClass": "LLD.DesignPatterns.Creational.Prototype.PrototypeDemo",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "BuilderPatternDemo",
+            "request": "launch",
+            "mainClass": "LLD.DesignPatterns.Creational.Builder.BuilderPatternDemo",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "AbstractFactoryDemo",
+            "request": "launch",
+            "mainClass": "LLD.DesignPatterns.Creational.AbstractFactory.AbstractFactoryDemo",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "LLD.DesignPatterns.Creational.Factory.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "SingletonTest",
+            "request": "launch",
+            "mainClass": "LLD.DesignPatterns.Creational.Singleton.SingletonTest",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "LLD.Netflix.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "LLD.CoffeeMachine.Main",
             "projectName": "EDARPRACTICE"
         },
