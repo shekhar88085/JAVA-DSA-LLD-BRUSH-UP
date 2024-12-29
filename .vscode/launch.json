@@ -8,6 +8,20 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "LLD.DesignPatterns.Creational.Builder.Implementation.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "LLD.DesignPatterns.Creational.Factory.Implementation.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "LLD.DesignPatterns.Creational.Singleton.Implentation.Main",
             "projectName": "EDARPRACTICE"
         },
