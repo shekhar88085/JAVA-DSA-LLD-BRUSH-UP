@@ -1,5 +1,6 @@
 package LLD.StackOverFlow;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class User {
@@ -13,10 +14,15 @@ public class User {
     private List<Badge> badges;
 
     // Constructor
-    public User(int id, String name, String email) {
+    public User(int id, String name, String email, int reputationNumber) {
         this.id = id;
         this.name = name;
         this.email = email;
+        this.questionsAsked = new ArrayList<>();
+        this.answersPosted = new ArrayList<>();
+        this.commentsPosted = new ArrayList<>();
+        this.badges = new ArrayList<>();
+        this.reputation = new UserReputation(reputationNumber);
     }
 
     // Method to post a question

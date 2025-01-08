@@ -3,8 +3,8 @@ package LLD.StackOverFlow;
 public class Main {
     public static void main(String[] args) {
         // Create users
-        User user1 = new User(1, "Alice", "alice@example.com");
-        User user2 = new User(2, "Bob", "bob@example.com");
+        User user1 = new User(1, "Alice", "alice@example.com", 5);
+        User user2 = new User(2, "Bob", "bob@example.com", 6);
 
         // Create a question
         Question question = new Question(101,"title", user1, "What is the Singleton Design Pattern?");
