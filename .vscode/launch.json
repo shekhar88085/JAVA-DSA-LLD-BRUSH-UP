@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "assessment",
+            "request": "launch",
+            "mainClass": "ss.assessment",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "LLD.DesignPatterns.Behavioral.State.Main",
