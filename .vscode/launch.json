@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "JAVA.dd.main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "ThreadExample",
+            "request": "launch",
+            "mainClass": "JAVA.Multithreading.ThreadExample",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "JAVA.walmart.main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "LLD.DesignPatterns.Behavioral.TemplateMethod.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "LLD.DesignPatterns.Behavioral.Strategy.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "LLD.DesignPatterns.Behavioral.Observer.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "LLD.DesignPatterns.Behavioral.Mediator.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "LLD.DesignPatterns.Behavioral.ChainOfResponsibility.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "hj.Main",
+            "projectName": "EDARPRACTICE"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "LLD.StackOverFlow.Main",
