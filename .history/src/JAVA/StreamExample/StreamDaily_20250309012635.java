@@ -24,51 +24,6 @@ public class StreamDaily {
         findSumAndProduct(); // reduce()
         groupingAndPartition(); // groupingBy()/partitioningBy()
         countFrequency();
-        frequentNumber();
-        secondMostFrequentNumber();
-    }
-
-    private static void secondMostFrequentNumber() {
-        List<Integer> numbers = Arrays.asList(1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5);
-
-        // 🔹 Step 1: Create a frequency map
-        Map<Integer, Long> frequencyMap = numbers.stream()
-                .collect(Collectors.groupingBy(num -> num, Collectors.counting()));
-
-        // 🔹 Step 2: Sort entries by frequency in descending order
-        List<Map.Entry<Integer, Long>> sortedList = frequencyMap.entrySet().stream()
-                .sorted(Map.Entry.<Integer, Long>comparingByValue().reversed()) // Sort by value (freq) in desc order
-                .collect(Collectors.toList());
-
-        // 🔹 Step 3: Get the second most frequent number
-        if (sortedList.size() < 2) {
-            System.out.println("No second most frequent number!");
-        } else {
-            Map.Entry<Integer, Long> secondMostFrequent = sortedList.get(1); // Get second element
-            System.out.println("Second Most Frequent Number: " + secondMostFrequent.getKey() +
-                    " (Frequency: " + secondMostFrequent.getValue() + ")");
-        }
-    }
-
-    private static void frequentNumber() {
-        List<Integer> numbers = Arrays.asList(1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5);
-
-        // 🔹 Step 1: Create a frequency map
-        Map<Integer, Long> frequencyMap = numbers.stream()
-                .collect(Collectors.groupingBy(num -> num, Collectors.counting()));
-
-        // 🔹 Step 2: Find the most frequent number
-        Map.Entry<Integer, Long> mostFrequent = frequencyMap.entrySet().stream()
-                .max(Map.Entry.comparingByValue()) // Get entry with max frequency
-                .orElse(null); // Handle empty case (shouldn't happen here)
-
-        // 🔹 Step 3: Print the result
-        if (mostFrequent != null) {
-            System.out.println("Most Frequent Number: " + mostFrequent.getKey() +
-                    " (Frequency: " + mostFrequent.getValue() + ")");
-        } else {
-            System.out.println("List is empty!");
-        }
     }
 
     private static void countFrequency() {

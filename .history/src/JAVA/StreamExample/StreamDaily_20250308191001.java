@@ -5,8 +5,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Map;
-import java.util.Optional;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -19,97 +17,7 @@ public class StreamDaily {
         // allWaysToDefineAndInitializeList();
         sortInAscendingOrder();
         sortInDescendingOrder();
-        findDistinctNumbers(); // distinct()
-        findMaxAndMin(); // min()/max()
-        findSumAndProduct(); // reduce()
-        groupingAndPartition(); // groupingBy()/partitioningBy()
-        countFrequency();
-        frequentNumber();
-        secondMostFrequentNumber();
-    }
-
-    private static void secondMostFrequentNumber() {
-        List<Integer> numbers = Arrays.asList(1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5);
-
-        // 🔹 Step 1: Create a frequency map
-        Map<Integer, Long> frequencyMap = numbers.stream()
-                .collect(Collectors.groupingBy(num -> num, Collectors.counting()));
-
-        // 🔹 Step 2: Sort entries by frequency in descending order
-        List<Map.Entry<Integer, Long>> sortedList = frequencyMap.entrySet().stream()
-                .sorted(Map.Entry.<Integer, Long>comparingByValue().reversed()) // Sort by value (freq) in desc order
-                .collect(Collectors.toList());
-
-        // 🔹 Step 3: Get the second most frequent number
-        if (sortedList.size() < 2) {
-            System.out.println("No second most frequent number!");
-        } else {
-            Map.Entry<Integer, Long> secondMostFrequent = sortedList.get(1); // Get second element
-            System.out.println("Second Most Frequent Number: " + secondMostFrequent.getKey() +
-                    " (Frequency: " + secondMostFrequent.getValue() + ")");
-        }
-    }
-
-    private static void frequentNumber() {
-        List<Integer> numbers = Arrays.asList(1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5);
-
-        // 🔹 Step 1: Create a frequency map
-        Map<Integer, Long> frequencyMap = numbers.stream()
-                .collect(Collectors.groupingBy(num -> num, Collectors.counting()));
-
-        // 🔹 Step 2: Find the most frequent number
-        Map.Entry<Integer, Long> mostFrequent = frequencyMap.entrySet().stream()
-                .max(Map.Entry.comparingByValue()) // Get entry with max frequency
-                .orElse(null); // Handle empty case (shouldn't happen here)
-
-        // 🔹 Step 3: Print the result
-        if (mostFrequent != null) {
-            System.out.println("Most Frequent Number: " + mostFrequent.getKey() +
-                    " (Frequency: " + mostFrequent.getValue() + ")");
-        } else {
-            System.out.println("List is empty!");
-        }
-    }
-
-    private static void countFrequency() {
-        List<Integer> numbers = Arrays.asList(1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5);
-
-        // 🔹 Counting occurrences of each number
-        Map<Integer, Long> frequencyMap = numbers.stream()
-                .collect(Collectors.groupingBy(num -> num, Collectors.counting()));
-
-        System.out.println("Frequency Count: " + frequencyMap);
-    }
-
-    private static void groupingAndPartition() {
-        List<Integer> numbers = Arrays.asList(10, 25, 30, 45, 50, 65, 70, 85, 90, 100);
-
-        // 🔹 1️⃣ Grouping by Even and Odd
-        Map<String, List<Integer>> groupedNumbers = numbers.stream()
-                .collect(Collectors.groupingBy(num -> num % 2 == 0 ? "EVEN" : "ODD"));
-
-        System.out.println("Grouped by Even/Odd: " + groupedNumbers);
-
-        // 🔹 2️⃣ Partitioning into Even and Odd
-        Map<Boolean, List<Integer>> partitionedNumbers = numbers.stream()
-                .collect(Collectors.partitioningBy(num -> num % 2 == 0));
-
-        System.out.println("Partitioned into Even/Odd: " + partitionedNumbers);
-    }
-
-    private static void findSumAndProduct() {
-        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
-        System.out.println("Sum of all Numbers: " + numbers.stream().reduce(0, (a, b) -> a + b));
-        System.out.println("Product of all Numbers: " + numbers.stream().reduce(1, (a, b) -> a * b));
-    }
-
-    private static void findMaxAndMin() {
-        List<Integer> numbers = Arrays.asList(10, 25, 3, 7, 15, 2, 30, 18);
-        Optional<Integer> maxNumber = numbers.stream().max(Integer::compareTo);
-        Optional<Integer> minNumber = numbers.stream().min(Integer::compareTo);
-
-        System.out.println("Maximum number: " + maxNumber.orElse(-1));
-        System.out.println("Minimum number: " + minNumber.orElse(-1));
+        findDistinctNumbers();
 
     }
 
