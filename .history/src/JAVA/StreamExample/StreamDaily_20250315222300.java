@@ -36,24 +36,7 @@ public class StreamDaily {
         calculateAverage();
         findSecondMostFrequent();
         findSecondLongestWord();
-        findSecondLeastFrequent();
     }
-
-    private static void findSecondLeastFrequent() {
-        List<Integer> numbers = Arrays.asList(1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5);
-    
-        Integer secondLeastFrequentNumber = numbers.stream()
-                .collect(Collectors.groupingBy(a -> a, Collectors.counting())) // Count frequencies
-                .entrySet().stream() // Convert to stream
-                .sorted(Map.Entry.comparingByValue()) // Sort by frequency (Ascending)
-                .skip(1) // Skip the least frequent
-                .map(Map.Entry::getKey) // Extract number (not frequency)
-                .findFirst() // Get the second least frequent number
-                .orElse(null); // Handle empty case
-    
-        System.out.println("Second Least Frequent Number: " + secondLeastFrequentNumber);
-    }
-    
 
     private static void findSecondLongestWord() {
         List<String> words = Arrays.asList("apple", "banana", "cherry", "watermelon", "kiwi");

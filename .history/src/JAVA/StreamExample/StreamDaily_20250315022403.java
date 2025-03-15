@@ -34,52 +34,6 @@ public class StreamDaily {
         findLongestPalindrome();
         findSecondSmallest();
         calculateAverage();
-        findSecondMostFrequent();
-        findSecondLongestWord();
-        findSecondLeastFrequent();
-    }
-
-    private static void findSecondLeastFrequent() {
-        List<Integer> numbers = Arrays.asList(1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5);
-    
-        Integer secondLeastFrequentNumber = numbers.stream()
-                .collect(Collectors.groupingBy(a -> a, Collectors.counting())) // Count frequencies
-                .entrySet().stream() // Convert to stream
-                .sorted(Map.Entry.comparingByValue()) // Sort by frequency (Ascending)
-                .skip(1) // Skip the least frequent
-                .map(Map.Entry::getKey) // Extract number (not frequency)
-                .findFirst() // Get the second least frequent number
-                .orElse(null); // Handle empty case
-    
-        System.out.println("Second Least Frequent Number: " + secondLeastFrequentNumber);
-    }
-    
-
-    private static void findSecondLongestWord() {
-        List<String> words = Arrays.asList("apple", "banana", "cherry", "watermelon", "kiwi");
-
-        String secondLongestWord = words.stream()
-                .sorted((a, b) -> Integer.compare(b.length(), a.length())) // Sort by length (Descending)
-                .skip(1) // Skip the longest word
-                .findFirst() // Get the second longest word
-                .orElse(null); // Handle empty case
-
-        System.out.println("Second Longest Word: " + secondLongestWord);
-    }
-
-    private static void findSecondMostFrequent() {
-        List<Integer> numbers = Arrays.asList(1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5);
-
-        Integer secondMostFrequentNumber = numbers.stream()
-                .collect(Collectors.groupingBy(a -> a, Collectors.counting())) // Count occurrences
-                .entrySet().stream()
-                .sorted((e1, e2) -> Long.compare(e2.getValue(), e1.getValue())) // Sort by count (desc)
-                .skip(1) // Skip the most frequent element
-                .map(Map.Entry::getKey) // Get the number
-                .findFirst() // Pick the first after skipping
-                .orElse(null); // Handle empty case
-
-        System.out.println("Second Most Frequent Number: " + secondMostFrequentNumber);
     }
 
     private static void calculateAverage() {
@@ -299,14 +253,10 @@ public class StreamDaily {
 
         /*
          * 🔥 Which One to Use?
-         * Method ......................................Creates New List? Modifies
-         * Original? Removes Duplicates?
-         * sorted(Comparator.reverseOrder()) ...................✅ Yes ...........❌ No
-         * .............❌ No
-         * Collections.sort(Collections.reverseOrder()) ........❌ No ............✅
-         * Yes............ ❌ No
-         * List.sort(Comparator.reverseOrder()) ................❌ No ............✅ Yes
-         * ............❌ No
+         * Method Creates New List? Modifies Original? Removes Duplicates?
+         * sorted(Comparator.reverseOrder()) ✅ Yes ❌ No ❌ No
+         * Collections.sort(Collections.reverseOrder()) ❌ No ✅ Yes ❌ No
+         * List.sort(Comparator.reverseOrder()) ❌ No ✅ Yes ❌ No
          */
     }
 
@@ -329,18 +279,12 @@ public class StreamDaily {
 
         /*
          * 🔥 Which One to Use?
-         * Method ............................Creates New List? Modifies Original?
-         * Removes Duplicates?
-         * sorted()................................ ✅ Yes............. ❌
-         * No................. ❌ No
-         * sorted(Comparator.naturalOrder()) .......✅ Yes .............❌ No
-         * .................❌ No
-         * Collections.sort()...................... ❌ No.............. ✅ Yes
-         * ................❌ No
-         * List.sort()............................. ❌ No ..............✅ Yes
-         * ................❌ No
-         * TreeSet .................................✅ Yes .............❌ No
-         * .................✅ Yes
+         * Method Creates New List? Modifies Original? Removes Duplicates?
+         * sorted() ✅ Yes ❌ No ❌ No
+         * sorted(Comparator.naturalOrder()) ✅ Yes ❌ No ❌ No
+         * Collections.sort() ❌ No ✅ Yes ❌ No
+         * List.sort() ❌ No ✅ Yes ❌ No
+         * TreeSet ✅ Yes ❌ No ✅ Yes
          */
     }
 
